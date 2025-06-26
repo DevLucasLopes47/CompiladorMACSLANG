@@ -56,19 +56,19 @@ O analisador léxico reconhece os seguintes tokens:
 ## 📚 3. Gramática Formal Simplificada
 
 ```ebnf
-programa        ::= (funcao | main_funcao)*
+programa        := (funcao | main_funcao)*
 
-funcao          ::= 'func' IDENTIFICADOR '(' parametros? ')' ':' TIPO bloco
-main_funcao     ::= 'main' '(' ')' bloco
+funcao          := 'func' IDENTIFICADOR '(' parametros? ')' ':' TIPO bloco
+main_funcao     := 'main' '(' ')' bloco
 
-parametros      ::= parametro (',' parametro)*
-parametro       ::= IDENTIFICADOR ':' TIPO
+parametros      := parametro (',' parametro)*
+parametro       := IDENTIFICADOR ':' TIPO
 
-bloco           ::= '{' (declaracao | comando)* '}'
+bloco           := '{' (declaracao | comando)* '}'
 
-declaracao      ::= 'var' IDENTIFICADOR ':' TIPO ('=' expressao)? ';'
+declaracao      := 'var' IDENTIFICADOR ':' TIPO ('=' expressao)? ';'
 
-comando         ::= atribuicao
+comando         := atribuicao
                  | chamada_funcao
                  | comandoIf
                  | comandoWhile
@@ -77,19 +77,19 @@ comando         ::= atribuicao
                  | comandoInput
                  | comandoReturn
 
-atribuicao      ::= IDENTIFICADOR '=' expressao ';'
-chamada_funcao  ::= IDENTIFICADOR '(' (expressao (',' expressao)*)? ')'
+atribuicao      := IDENTIFICADOR '=' expressao ';'
+chamada_funcao  := IDENTIFICADOR '(' (expressao (',' expressao)*)? ')'
 
-comandoIf       ::= 'if' '(' expressao ')' bloco ('else' bloco)?
-comandoWhile    ::= 'while' '(' expressao ')' bloco
-comandoFor      ::= 'for' '(' atribuicao expressao ';' atribuicao ')' bloco
+comandoIf       := 'if' '(' expressao ')' bloco ('else' bloco)?
+comandoWhile    := 'while' '(' expressao ')' bloco
+comandoFor      := 'for' '(' atribuicao expressao ';' atribuicao ')' bloco
 
-comandoPrint    ::= 'print' '(' expressao ')' ';'
-comandoInput    ::= 'input' '(' IDENTIFICADOR ')' ';'
-comandoReturn   ::= 'return' expressao ';'
+comandoPrint    := 'print' '(' expressao ')' ';'
+comandoInput    := 'input' '(' IDENTIFICADOR ')' ';'
+comandoReturn   := 'return' expressao ';'
 
-expressao       ::= termo (('+' | '-') termo)*
-termo           ::= IDENTIFICADOR | NUMERO | chamada_funcao
+expressao       := termo (('+' | '-') termo)*
+termo           := IDENTIFICADOR | NUMERO | chamada_funcao
 ```
 
 ---
