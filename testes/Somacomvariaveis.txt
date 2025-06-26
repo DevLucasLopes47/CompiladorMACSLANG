@@ -1,0 +1,14 @@
+func soma(a: int, b: int): int {
+    return a + b;
+}
+
+main() {
+    var x: int;
+    var y: int;
+    var resultado: int;
+
+    x = 2;
+    y = 7;
+    resultado = soma(x, y);
+    print(resultado);
+}

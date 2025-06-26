@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "gerador_codigo.h": "c",
+        "ctype.h": "c"
+    }
+}
