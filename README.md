@@ -228,7 +228,7 @@ main() {
 Saída esperada: **7**
 
 
-## 📚 11. Referências e Recursos
+## 📚 9. Referências e Recursos
 
 - [Documentação Flex](https://westes.github.io/flex/manual/)
 - [NASM Manual](https://www.nasm.us/doc/)
